@@ -8,14 +8,14 @@ const Footer: React.FC = () => {
       <div className="section-shell shell-wide px-4 py-4 md:px-5 md:py-5">
         <div className="grid grid-cols-1 gap-4 md:grid-cols-12 md:items-start md:gap-x-6 md:gap-y-3">
           <div className="md:col-span-5">
-            <p className="text-sm font-semibold text-white/92">联系我们</p>
-            <h3 className="font-display mt-2 text-[1.28rem] font-bold leading-tight text-white md:text-[1.44rem] lg:whitespace-nowrap">
-              准备好把客户沟通升级成增长资产了吗？
+            <p className="text-sm font-semibold text-white/92">Contact Us</p>
+            <h3 className="font-display mt-2 max-w-[420px] text-[10px] font-bold leading-tight text-white md:text-xs">
+              Ready to turn customer communication into a growth asset?
             </h3>
 
             <div className="mt-3 grid grid-cols-1 gap-2 sm:grid-cols-2 md:max-w-[460px]">
               <div className="rounded-2xl border border-white/10 bg-black/35 px-3 py-2">
-                <p className="text-xs text-white/65">电话</p>
+                <p className="text-xs text-white/65">Phone</p>
                 <div className="mt-1.5 space-y-0.5 text-sm font-semibold text-white">
                   <p>17810648168</p>
                   <p>13911788783</p>
@@ -23,7 +23,7 @@ const Footer: React.FC = () => {
               </div>
 
               <div className="rounded-2xl border border-white/10 bg-black/35 px-3 py-2">
-                <p className="text-xs text-white/65">邮箱</p>
+                <p className="text-xs text-white/65">Email</p>
                 <div className="mt-1.5 space-y-0.5 text-sm font-semibold">
                   <a href="mailto:doublegou@gmail.com" className="block text-white transition-colors hover:text-primary">
                     doublegou@gmail.com
@@ -37,43 +37,43 @@ const Footer: React.FC = () => {
           </div>
 
           <div className="md:col-span-3">
-            <p className="text-sm font-semibold text-white/92">扫码添加</p>
+            <p className="text-sm font-semibold text-white/92">Scan to Connect</p>
             <div className="mt-[14px] grid max-w-[240px] grid-cols-2 gap-2">
               <div className="rounded-xl border border-white/10 bg-black/35 p-1.5">
-                <Image src="/images/qr-code-1.jpg" alt="微信二维码一" width={120} height={120} className="h-auto w-full rounded-lg" />
+                <Image src="/images/qr-code-1.jpg" alt="WeChat QR code one" width={120} height={120} className="h-auto w-full rounded-lg" />
               </div>
               <div className="rounded-xl border border-white/10 bg-black/35 p-1.5">
-                <Image src="/images/qr-code-2.jpg" alt="微信二维码二" width={120} height={120} className="h-auto w-full rounded-lg" />
+                <Image src="/images/qr-code-2.jpg" alt="WeChat QR code two" width={120} height={120} className="h-auto w-full rounded-lg" />
               </div>
             </div>
           </div>
 
           <div className="md:col-span-2">
-            <p className="text-sm font-semibold text-white/92">快速入口</p>
+            <p className="text-sm font-semibold text-white/92">Quick Links</p>
             <ul className="mt-3 space-y-1.5 text-sm">
               <li>
                 <Link href="#home" className="text-white/70 transition-colors hover:text-primary">
-                  首页
+                  Home
                 </Link>
               </li>
               <li>
                 <Link href="#about" className="text-white/70 transition-colors hover:text-primary">
-                  关于
+                  About
                 </Link>
               </li>
               <li>
                 <Link href="#features" className="text-white/70 transition-colors hover:text-primary">
-                  功能
+                  Features
                 </Link>
               </li>
             </ul>
           </div>
 
           <div className="md:col-span-2">
-            <p className="text-sm font-semibold text-white/92">公司信息</p>
+            <p className="text-sm font-semibold text-white/92">Company Info</p>
             <div className="mt-3 text-xs leading-5 text-white/52">
-              <p>北京三擎科技有限公司</p>
-              <p className="mt-1">北京市昌平区东小口镇天通中苑二区21号楼1层103-1799</p>
+              <p>Beijing Sanqing Technology Co., Ltd.</p>
+              <p className="mt-1">No. 21 Tiantong Zhongyuan 2nd District, Floor 1, Room 103-1799, Changping District, Beijing</p>
             </div>
           </div>
         </div>
@@ -82,7 +82,7 @@ const Footer: React.FC = () => {
           <div className="flex items-center justify-center gap-3 text-[11px] leading-tight text-white/56">
             <p>Trigine</p>
             <span className="text-white/35">|</span>
-            <p>京ICP备2026012266号-1</p>
+            <p>ICP Filing No. 2026012266-1</p>
           </div>
         </div>
       </div>

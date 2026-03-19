@@ -47,11 +47,11 @@ const Features: React.FC = () => {
     <section id="features" className="pb-12 pt-2 md:pb-20">
       <div className="shell-wide">
         <div className="mb-6 text-center md:mb-10">
-          <p className="text-xs font-semibold uppercase tracking-[0.16em] text-primary/90">核心能力</p>
+          <p className="text-xs font-semibold uppercase tracking-[0.16em] text-primary/90">Core Capabilities</p>
           <h2 className="font-display mt-3 text-2xl font-bold leading-tight text-white md:text-4xl">
-            让客户沟通可被管理
+            Make customer communication manageable
             <br />
-            让销售动作可被放大
+            Make sales execution scalable
           </h2>
         </div>
 
@@ -59,25 +59,28 @@ const Features: React.FC = () => {
           <article className="section-shell p-6 md:p-8">
             <div className="space-y-3 rounded-2xl border border-white/10 bg-black/30 p-4">
               <div className="flex items-center justify-between rounded-xl bg-black/45 px-3 py-2">
-                <span className="text-sm text-white/70">本周新增沟通</span>
-                <span className="font-display text-lg font-bold text-primary">32 次</span>
+                <span className="text-sm text-white/70">New Conversations This Week</span>
+                <span className="font-display text-lg font-bold text-primary">32 Sessions</span>
               </div>
               <div className="flex items-center justify-between rounded-xl bg-black/45 px-3 py-2">
-                <span className="text-sm text-white/70">自动生成待办</span>
-                <span className="font-display text-lg font-bold text-primary">18 项</span>
+                <span className="text-sm text-white/70">Auto-Generated Action Items</span>
+                <span className="font-display text-lg font-bold text-primary">18 Items</span>
               </div>
               <div className="flex items-center justify-between rounded-xl bg-black/45 px-3 py-2">
-                <span className="text-sm text-white/70">可复用客户洞察</span>
+                <span className="text-sm text-white/70">Reusable Customer Insights</span>
                 <span className="font-display text-lg font-bold text-primary">95%</span>
               </div>
             </div>
 
             <h3 className="font-display mt-7 text-3xl font-bold leading-[1.08] text-white md:text-4xl">
-              选择你的节奏
+              Choose your pace
               <br />
-              CaseLog 自动作业
+              Let CaseLog handle the busywork
             </h3>
-            <p className="mt-3 max-w-md text-white/68">你专注在关键对话，系统负责记录、提炼与跟进，让流程既轻盈又可控。</p>
+            <p className="mt-3 max-w-md text-white/68">
+              You stay focused on critical conversations while the system records, extracts, and follows through in the
+              background.
+            </p>
           </article>
 
           <article className="section-shell p-6 md:p-8">
@@ -92,11 +95,13 @@ const Features: React.FC = () => {
             </div>
 
             <h3 className="font-display mt-7 text-3xl font-bold leading-[1.08] text-white md:text-4xl">
-              交互偏好可配置
+              Configurable preferences
               <br />
-              工作流灵活可控
+              Flexible, controllable workflows
             </h3>
-            <p className="mt-3 max-w-md text-white/68">从话术重点到任务节奏，你可以按团队打法配置规则，持续优化转化链路。</p>
+            <p className="mt-3 max-w-md text-white/68">
+              From talk-track focus to task cadence, configure rules for your team and keep improving the conversion path.
+            </p>
           </article>
         </div>
 
@@ -105,24 +110,30 @@ const Features: React.FC = () => {
             <IconShell>
               <TranscriptIcon />
             </IconShell>
-            <h4 className="mt-4 text-xl font-bold text-white">录音转写总结</h4>
-            <p className="mt-2 text-sm leading-relaxed text-white/66">会后自动沉淀为结构化文本与智能摘要，后续可检索、可回看。</p>
+            <h4 className="mt-4 text-xl font-bold text-white">Call Transcription Summary</h4>
+            <p className="mt-2 text-sm leading-relaxed text-white/66">
+              Every meeting is converted into structured notes and smart summaries that are searchable and reviewable.
+            </p>
           </article>
 
           <article className="section-shell p-6">
             <IconShell>
               <TaskIcon />
             </IconShell>
-            <h4 className="mt-4 text-xl font-bold text-white">任务自动拆解</h4>
-            <p className="mt-2 text-sm leading-relaxed text-white/66">会后自动生成待办与日期，避免“聊完了但没人执行”。</p>
+            <h4 className="mt-4 text-xl font-bold text-white">Automatic Task Breakdown</h4>
+            <p className="mt-2 text-sm leading-relaxed text-white/66">
+              Generate owners, next actions, and due dates automatically to prevent execution gaps after conversations.
+            </p>
           </article>
 
           <article className="section-shell p-6">
             <IconShell>
               <ProfileIcon />
             </IconShell>
-            <h4 className="mt-4 text-xl font-bold text-white">客户画像迭代</h4>
-            <p className="mt-2 text-sm leading-relaxed text-white/66">每一次互动都补全客户背景，让洞察逐步变得更精准。</p>
+            <h4 className="mt-4 text-xl font-bold text-white">Customer Profile Iteration</h4>
+            <p className="mt-2 text-sm leading-relaxed text-white/66">
+              Every interaction enriches customer context so your understanding gets sharper over time.
+            </p>
           </article>
         </div>
       </div>

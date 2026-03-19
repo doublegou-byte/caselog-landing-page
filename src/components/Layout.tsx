@@ -11,7 +11,7 @@ interface LayoutProps {
 const Layout: React.FC<LayoutProps> = ({
   children,
   title = "CaseLog",
-  description = "让每一次客户沟通，沉淀为可复用的增长资产。",
+  description = "Turn every customer conversation into a reusable growth asset.",
 }) => {
   return (
     <>

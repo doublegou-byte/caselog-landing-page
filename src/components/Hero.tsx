@@ -13,16 +13,16 @@ const Hero = () => {
 
             <div className="flex items-center gap-4 md:gap-8">
               <a href="#about" className="hidden text-sm font-medium text-white/82 transition-colors hover:text-white md:block">
-                关于
+                About
               </a>
               <a href="#features" className="hidden text-sm font-medium text-white/82 transition-colors hover:text-white md:block">
-                功能
+                Features
               </a>
               <a
                 href="#contact"
                 className="rounded-full bg-primary px-5 py-2 text-sm font-semibold text-black transition-colors hover:bg-[#ffb340]"
               >
-                立即体验
+                Try it free
               </a>
             </div>
           </div>
@@ -34,12 +34,13 @@ const Hero = () => {
               CaseLog CRM Intelligence
             </p>
             <h1 className="font-display text-3xl font-bold leading-[1.06] tracking-tight text-white md:text-[3.25rem] lg:text-[3.75rem]">
-              每次沟通都沉淀价值
+              Every conversation creates value.
               <br />
-              每位客户都可持续跟进
+              Every customer keeps moving forward.
             </h1>
             <p className="mt-5 max-w-xl text-base text-white/72 md:text-lg">
-              从录音、转写到待办与客户档案，自动串起完整闭环。你的每一次销售动作，都能被留存、复用、增长。
+              From recording and transcription to action items and customer profiles, CaseLog connects the full workflow
+              automatically. Every sales move is captured, reusable, and compounding.
             </p>
 
             <div className="mt-8 flex flex-wrap items-center gap-3">
@@ -47,13 +48,13 @@ const Hero = () => {
                 href="#contact"
                 className="rounded-full bg-primary px-6 py-3 text-sm font-bold text-black transition-transform hover:scale-[1.03] hover:bg-[#ffb340]"
               >
-                申请内测名额
+                Request Early Access
               </a>
               <a
                 href="#features"
                 className="rounded-full border border-white/20 bg-white/5 px-6 py-3 text-sm font-semibold text-white transition-colors hover:bg-white/12"
               >
-                查看核心功能
+                View Core Features
               </a>
             </div>
           </div>

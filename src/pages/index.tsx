@@ -6,7 +6,7 @@ import Features from "@/components/Features";
 
 export default function Home() {
   return (
-    <Layout title="CaseLog - 让客户沟通持续沉淀">
+    <Layout title="CaseLog - Make Customer Communication Compounding">
       <Hero />
       <About />
       <Features />
