@@ -4,158 +4,106 @@ import Link from "next/link";
 
 const Footer: React.FC = () => {
   return (
-    <footer className="bg-secondary text-white pt-30 pb-8 relative">
+    <footer className="bg-secondary text-white pt-4 pb-2 relative">
       
       <div className="container mx-auto px-4">
-        <div className="grid grid-cols-1 md:grid-cols-12 gap-8 mb-16">
-          {/* About Section */}
-          <div className="md:col-span-4">
-            <h2 className="text-3xl font-bold uppercase mb-4">Logo</h2>
-            <p className="mb-6 text-white/80">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra
-              nunc ante velit vitae. Est tellus vitae, nullam lobortis enim.
-            </p>
-            <div className="flex items-center space-x-4">
-              <a
-                href="https://facebook.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="Facebook"
-                className="text-white hover:text-primary transition-colors"
-              >
-                <Image
-                  src="/images/facebook-icon.svg"
-                  alt="Facebook"
-                  width={14}
-                  height={14}
-                />
-              </a>
-              <div className="h-4 border-l border-white/30"></div>
-              <a
-                href="https://instagram.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="Instagram"
-                className="text-white hover:text-primary transition-colors"
-              >
-                <Image
-                  src="/images/instagram-icon.svg"
-                  alt="Instagram"
-                  width={24}
-                  height={24}
-                />
-              </a>
-              <div className="h-4 border-l border-white/30"></div>
-              <a
-                href="https://twitter.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="Twitter"
-                className="text-white hover:text-primary transition-colors"
-              >
-                <Image
-                  src="/images/twitter-icon.svg"
-                  alt="Twitter"
-                  width={24}
-                  height={24}
-                />
-              </a>
-              <div className="h-4 border-l border-white/30"></div>
-              <a
-                href="https://youtube.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="YouTube"
-                className="text-white hover:text-primary transition-colors"
-              >
-                <Image
-                  src="/images/youtube-icon.svg"
-                  alt="YouTube"
-                  width={24}
-                  height={24}
-                />
-              </a>
-            </div>
-          </div>
-
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4 max-w-4xl mx-auto">
           {/* Quick Links */}
-          <div className="md:col-span-3 md:ml-8">
-            <h3 className="text-2xl font-semibold uppercase mb-4">
-              Quick Links
+          <div className="text-center md:text-left">
+            <h3 className="text-lg font-semibold uppercase mb-2">
+              快速链接
             </h3>
-            <ul className="space-y-3">
+            <ul className="space-y-1.5">
               <li>
                 <Link
                   href="#features"
-                  className="text-white/80 hover:text-primary transition-colors"
+                  className="text-white/80 hover:text-primary transition-colors text-sm"
                 >
-                  Features
+                  应用功能
                 </Link>
               </li>
               <li>
                 <Link
                   href="#about"
-                  className="text-white/80 hover:text-primary transition-colors"
+                  className="text-white/80 hover:text-primary transition-colors text-sm"
                 >
-                  About
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="#screenshot"
-                  className="text-white/80 hover:text-primary transition-colors"
-                >
-                  Screenshots
+                  关于我们
                 </Link>
               </li>
             </ul>
           </div>
 
-          {/* Newsletter */}
-          <div className="md:col-span-5">
-            <h3 className="text-2xl font-semibold uppercase mb-4">
-              Newsletter
+          {/* Contact Info */}
+          <div className="text-center md:text-left">
+            <h3 className="text-lg font-semibold uppercase mb-2">
+              联系我们
             </h3>
-            <p className="mb-6 text-white/80">
-              Subscribe to our newsletter for latest updates and news
-            </p>
-
-            <div className="relative">
-              <input
-                type="email"
-                placeholder="Your email address"
-                className="w-full bg-transparent border border-white rounded py-3 px-4 text-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-primary"
-              />
-              <button
-                className="absolute right-0 top-0 bottom-0 bg-primary text-white px-4 rounded-r flex items-center justify-center hover:bg-primary/90 transition-colors"
-                aria-label="Send"
-              >
-                <Image
-                  src="/images/send-icon.svg"
-                  alt="Send"
-                  width={24}
-                  height={24}
-                  className="text-white"
-                />
-              </button>
+            <div className="mb-2 flex items-center justify-center md:justify-start">
+              <div className="w-7 h-7 rounded-full bg-primary flex items-center justify-center mr-3">
+                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-white">
+                  <path d="M3 21h18M5 21V7l8-4 8-4-4v14M9 10a2 2 0 1 1 4 0 2 2 0 1 1-4 0"></path>
+                </svg>
+              </div>
+              <p className="text-white/80 text-sm">北京三擎科技有限公司</p>
+            </div>
+            <div className="space-y-2">
+              <div className="flex items-center justify-center md:justify-start">
+                <div className="w-7 h-7 rounded-full bg-primary flex items-center justify-center mr-3">
+                  <Image
+                    src="/images/footer-phone-icon.svg"
+                    alt="Phone"
+                    width={12}
+                    height={12}
+                    className="text-white"
+                  />
+                </div>
+                <div className="flex items-center space-x-3">
+                  <p className="text-white/80 text-sm">17810648168</p>
+                  <span className="text-white/80">|</span>
+                  <p className="text-white/80 text-sm">13911788783</p>
+                </div>
+              </div>
+              <div className="flex items-center justify-center md:justify-start">
+                <div className="w-7 h-7 rounded-full bg-primary flex items-center justify-center mr-3">
+                  <Image
+                    src="/images/footer-mail-icon.svg"
+                    alt="Email"
+                    width={12}
+                    height={12}
+                    className="text-white"
+                  />
+                </div>
+                <div className="flex items-center space-x-3">
+                  <a href="mailto:doublegou@gmail.com" className="text-white/80 hover:text-primary transition-colors text-sm">
+                    doublegou@gmail.com
+                  </a>
+                  <span className="text-white/80">|</span>
+                  <a href="mailto:newbee1984@gmail.com" className="text-white/80 hover:text-primary transition-colors text-sm">
+                    newbee1984@gmail.com
+                  </a>
+                </div>
+              </div>
+              <div className="flex items-center justify-center md:justify-start">
+                <div className="w-7 h-7 rounded-full bg-primary flex items-center justify-center mr-3">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-white">
+                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                    <circle cx="12" cy="10" r="3"></circle>
+                  </svg>
+                </div>
+                <p className="text-white/80 text-sm">北京市昌平区东小口镇天通中苑二区21号楼1层103-1799</p>
+              </div>
             </div>
           </div>
         </div>
 
-        <div className="border-t border-white/20 pt-6 mt-10">
-          <div className="flex items-center justify-center">
-            <div className="flex items-center">
-              <Image
-                src="/images/copyright-icon.svg"
-                alt="Copyright"
-                width={18}
-                height={18}
-                className="mr-2 opacity-80"
-              />
-              <p className="text-white/80">
-                Copyright 2025. All Right Reserved.
-              </p>
-            </div>
+        <div className="border-t border-white/20 pt-2 mt-1">
+          <div className="flex flex-col items-center justify-center space-y-1">
+            <p className="text-white/80 text-xs leading-tight">
+              Trigine
+            </p>
+            <p className="text-white/80 text-xs leading-tight">
+              京ICP备2026012266号-1
+            </p>
           </div>
         </div>
       </div>

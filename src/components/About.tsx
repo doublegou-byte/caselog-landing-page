@@ -29,27 +29,26 @@ const About: React.FC = () => {
   return (
     <section id="about" className="py-20 bg-white">
       <div className="container mx-auto px-4">
-        <h2 className="text-3xl font-bold uppercase text-secondary text-center mb-6">About Our App</h2>
+        <h2 className="text-3xl font-bold uppercase text-secondary text-center mb-6">关于客思录</h2>
         <p className="text-gray-500 text-center max-w-2xl mx-auto mb-16">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra nunc ante velit vitae. 
-          Est tellus vitae, nullam lobortis enim. Faucibus amet etiam tincidunt rhoncus, ullamcorper velit. 
-          Ullamcorper risus tempor, ac nunc libero urna, feugiat.
+          不是简单记录沟通<br />
+          而是把信息持续沉淀为客户档案
         </p>
         
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
           <div className="order-2 md:order-1">
             <div className="space-y-6">
               <FeatureCard 
-                title="Creative Design"
-                description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra nunc ante velit vitae. Est tellus vitae, nullam lobortis enim. Faucibus amet etiam tincidunt rhoncus, ullamcorper velit."
+                title="沟通完整记录"
+                description="每一次交流都被保留下来，无需额外整理，也不会遗漏细节。"
               />
               <FeatureCard 
-                title="Easy to Use"
-                description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra nunc ante velit vitae. Est tellus vitae, nullam lobortis enim. Faucibus amet etiam tincidunt rhoncus, ullamcorper velit."
+                title="内容自动整理"
+                description="语音转文字，自动提炼重点，让沟通信息变得清晰、可查、可回看。"
               />
               <FeatureCard 
-                title="Best User Experience"
-                description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra nunc ante velit vitae. Est tellus vitae, nullam lobortis enim. Faucibus amet etiam tincidunt rhoncus, ullamcorper velit."
+                title="持续形成客户档案"
+                description="所有记录围绕客户沉淀，逐步积累完整的沟通历史与背景。"
               />
             </div>
           </div>
@@ -58,11 +57,11 @@ const About: React.FC = () => {
             <div className="w-64 h-64 bg-white rounded-full shadow-lg absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 -z-10"></div>
             <div className="relative">
               <Image 
-                src="/images/phone-mockup.png"
+                src="/images/2.png"
                 alt="Phone Mockup"
                 width={350}
                 height={600}
-                className="mx-auto"
+                className="mx-auto rounded-3xl shadow-xl"
               />
             </div>
           </div>

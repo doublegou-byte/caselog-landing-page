@@ -23,48 +23,48 @@ const Hero = () => {
             <div className="hidden md:block absolute top-0 left-20 w-160 h-100 border-[#7572FF] border-[18px]"></div>
             <div className="bg-white p-6 md:p-8 pb-8 md:pb-12 mb-6 md:ml-8 md:mt-8 z-10 md:absolute md:top-10 rounded-lg md:rounded-none shadow-lg md:shadow-none">
               <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-primary uppercase leading-tight text-[#5956E9]">
-                A Great App Makes<br className="hidden sm:block" />Your Life Better
+                你和客户聊过的内容，<br />
+                90%都被浪费了
               </h1>
               <p className="text-gray-800 my-4 md:mb-8 max-w-xl">
-                Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. 
-                Velit officia consequat duis enim velit mollit. Exercitation veniam consequat 
-                sunt nostrud amet.
+                录音只是开始<br />
+                自动转录、提炼重点、生成待办，并持续沉淀为客户档案<br />
+                让每一次沟通，不只是结束，而是积累<br />
+                从一次对话，到长期可复用的客户资产
               </p>
               <div>
                 <h3 className="text-xl md:text-2xl font-semibold text-secondary uppercase mb-4">
-                  Download App Now
+                  扫码联系我们，获取内测，速来尝鲜
                 </h3>
                 <div className="flex flex-row flex-wrap gap-4">
-                  <a href="#" className="block w-60">
+                  <div className="block w-32 h-32 bg-white border-2 border-gray-300 rounded-lg flex items-center justify-center">
                     <Image 
-                      src="/images/download-apple.png"
-                      alt="Download on Apple Store"
+                      src="/images/qr-code-1.jpg"
+                      alt="QR Code 1"
                       width={120}
-                      height={56}
-                      className="w-full sm:w-auto h-auto"
+                      height={120}
                     />
-                  </a>
-                  <a href="#" className="block w-60">
+                  </div>
+                  <div className="block w-32 h-32 bg-white border-2 border-gray-300 rounded-lg flex items-center justify-center">
                     <Image 
-                      src="/images/download-google.png"
-                      alt="Get it on Google Play"
+                      src="/images/qr-code-2.jpg"
+                      alt="QR Code 2"
                       width={120}
-                      height={56}
-                      className="w-full sm:w-auto h-auto"
+                      height={120}
                     />
-                  </a>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
           
-          <div className="relative hidden md:block absolute top-0 -right-60">
+          <div className="relative hidden md:block absolute top-0 -right-40">
             <Image 
-              src="/images/mobile-mockup.png"
-              alt="Mobile App Mockup"
-              width={500}
-              height={600}
-              className="mx-auto"
+              src="/images/1.gif"
+              alt="App Demo"
+              width={280}
+              height={560}
+              className="mx-auto rounded-3xl shadow-xl"
             />
           </div>
           

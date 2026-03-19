@@ -16,11 +16,10 @@ const Features: React.FC = () => {
       
       <div className="container mx-auto px-4 relative z-10">
         <div className="text-center mb-16">
-          <h2 className="text-3xl font-bold uppercase text-white mb-4">App Features</h2>
+          <h2 className="text-3xl font-bold uppercase text-white mb-4">应用功能</h2>
           <p className="text-white/80 max-w-2xl mx-auto">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra nunc ante velit vitae. 
-            Est tellus vitae, nullam lobortis enim. Faucibus amet etiam tincidunt rhoncus, ullamcorper velit. 
-            Ullamcorper risus tempor, ac nunc libero urna, feugiat.
+            每一次沟通，都会留下可持续价值<br />
+            围绕客户沟通的记录、整理与沉淀，构建完整的信息链路
           </p>
         </div>
         
@@ -30,35 +29,41 @@ const Features: React.FC = () => {
             <div className="mb-16">
               <div className="flex justify-center mb-3">
                 <Image
-                  src="/images/icon-chat.svg"
-                  alt="Chat Feature"
+                  src="/images/microphone-icon.webp"
+                  alt="Recording Feature"
                   width={50}
                   height={50}
                   className="text-white"
                 />
               </div>
-              <h3 className="text-xl md:text-2xl font-semibold uppercase text-white mb-2 text-center">Free Chat</h3>
-              <p className="text-white/80 text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              <h3 className="text-xl md:text-2xl font-semibold uppercase text-white mb-2 text-center">实时录音</h3>
+              <p className="text-white/80 text-center">一键记录沟通过程，自动归档到对应客户。</p>
             </div>
             
             <div className="mb-16">
               <div className="flex justify-center mb-3">
                 <Image
-                  src="/images/icon-mobile.svg"
-                  alt="Mobile Version"
+                  src="/images/management.webp"
+                  alt="Transcription Feature"
                   width={50}
                   height={50}
                   className="text-white"
                 />
               </div>
-              <h3 className="text-xl md:text-2xl font-semibold uppercase text-white mb-2 text-center">iOS & Android</h3>
-              <p className="text-white/80 text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              <h3 className="text-xl md:text-2xl font-semibold uppercase text-white mb-2 text-center">转录与摘要</h3>
+              <p className="text-white/80 text-center">自动生成文字记录，快速查看重点线索。</p>
             </div>
           </div>
           
           {/* Center Phone Screenshot */}
-          <div className={`md:col-span-4 h-190 flex justify-center items-center order-first md:order-none mb-12 md:mb-0 rounded-3xl shadow-xl bg-[url(/images/app-screen.png)] bg-cover`}>
-            
+          <div className={`md:col-span-4 h-190 flex justify-center items-center order-first md:order-none mb-12 md:mb-0`}>
+            <Image
+              src="/images/3.gif"
+              alt="App Screenshot"
+              width={350}
+              height={700}
+              className="rounded-3xl shadow-xl"
+            />
           </div>
           
           {/* Right Features */}
@@ -66,29 +71,29 @@ const Features: React.FC = () => {
             <div className="mb-16">
               <div className="flex justify-center mb-3">
                 <Image
-                  src="/images/icon-browser.svg"
-                  alt="Unlimited Features"
+                  src="/images/task.webp"
+                  alt="Tasks Feature"
                   width={50}
                   height={50}
                   className="text-white"
                 />
               </div>
-              <h3 className="text-xl md:text-2xl font-semibold uppercase text-white mb-2 text-center">Unlimited Features</h3>
-              <p className="text-white/80 text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              <h3 className="text-xl md:text-2xl font-semibold uppercase text-white mb-2 text-center">待办与跟进</h3>
+              <p className="text-white/80 text-center">沟通结束自动形成待办，确保每一次交流都有后续。</p>
             </div>
             
             <div className="mb-16">
               <div className="flex justify-center mb-3">
                 <Image
-                  src="/images/icon-design.svg"
-                  alt="UI Design"
+                  src="/images/icon-customer.svg"
+                  alt="Customer Management Feature"
                   width={50}
                   height={50}
                   className="text-white"
                 />
               </div>
-              <h3 className="text-xl md:text-2xl font-semibold uppercase text-white mb-2 text-center">Great UI Design</h3>
-              <p className="text-white/80 text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              <h3 className="text-xl md:text-2xl font-semibold uppercase text-white mb-2 text-center">客户管理</h3>
+              <p className="text-white/80 text-center">统一管理客户信息，所有沟通记录集中查看。</p>
             </div>
           </div>
         </div>
@@ -98,28 +103,28 @@ const Features: React.FC = () => {
           <div className="md:col-span-1">
             <div className="flex justify-center mb-3">
               <Image
-                src="/images/icon-support.svg"
-                alt="24/7 Support"
+                src="/images/phone.webp"
+                alt="iOS and Android Support"
                 width={50}
                 height={50}
                 className="text-white"
               />
             </div>
-            <h3 className="text-xl md:text-2xl font-semibold uppercase text-white mb-2 text-center">24/7 Support</h3>
-            <p className="text-white/80 text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <h3 className="text-xl md:text-2xl font-semibold uppercase text-white mb-2 text-center">iOS 和 Android</h3>
+            <p className="text-white/80 text-center">支持主流移动平台，无论您使用什么设备，都能享受优质体验。</p>
           </div>
           <div className="md:col-span-1">
             <div className="flex justify-center mb-3">
               <Image
-                src="/images/icon-retina.svg"
-                alt="Retina Graphics"
+                src="/images/cloud.webp"
+                alt="Cross Platform Feature"
                 width={50}
                 height={50}
                 className="text-white"
               />
             </div>
-            <h3 className="text-xl md:text-2xl font-semibold uppercase text-white mb-2 text-center">Retina Ready Graphics</h3>
-            <p className="text-white/80 text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <h3 className="text-xl md:text-2xl font-semibold uppercase text-white mb-2 text-center">多端同步</h3>
+            <p className="text-white/80 text-center">数据实时同步，随时随地访问您的客户档案和沟通记录。</p>
           </div>
         </div>
       </div>
