@@ -22,7 +22,7 @@ const Hero = () => {
                 href="#contact"
                 className="rounded-full bg-primary px-5 py-2 text-sm font-semibold text-black transition-colors hover:bg-[#ffb340]"
               >
-                Try it free
+                Try Now
               </a>
             </div>
           </div>

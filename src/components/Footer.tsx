@@ -9,7 +9,7 @@ const Footer: React.FC = () => {
         <div className="grid grid-cols-1 gap-4 md:grid-cols-12 md:items-start md:gap-x-6 md:gap-y-3">
           <div className="md:col-span-5">
             <p className="text-sm font-semibold text-white/92">Contact Us</p>
-            <h3 className="font-display mt-2 max-w-[420px] text-[10px] font-bold leading-tight text-white md:text-xs">
+            <h3 className="font-display mt-2 max-w-[420px] text-[11px] font-bold leading-tight tracking-[-0.015em] text-white sm:whitespace-nowrap md:text-[13px] lg:text-[14px]">
               Ready to turn customer communication into a growth asset?
             </h3>
 
