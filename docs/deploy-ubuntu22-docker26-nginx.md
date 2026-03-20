@@ -298,14 +298,14 @@ docker compose up -d
 
 默认工作流行为：
 
-- 推送到 `main` 时自动构建并推送镜像
+- 推送到 `main` 时只做镜像构建校验，不推送镜像
 - 推送形如 `v1.0.0` 的 Git Tag 时自动构建并推送镜像
 - 支持在 GitHub Actions 页面手动触发
 
 镜像标签默认会包含：
 
-- `latest`：默认分支构建
-- `sha-<commit>`：按提交号生成
+- `latest`：发布 Tag 时生成
+- `sha-<commit>`：发布 Tag 时按提交号生成
 - `1.0.0`、`1.0` 这类语义化版本标签：当使用 `v1.0.0` 这类 Git Tag 触发时生成
 
 ## 13. GitHub Actions 需要配置什么
@@ -342,8 +342,7 @@ git push origin v1.0.0
 
 当你直接推送 `main` 分支时，工作流会自动推送这些标签：
 
-- `latest`
-- `sha-<commit>`
+不会推送镜像，只会校验 Docker 构建是否通过
 
 ## 15. 关于阿里云 ACR 个人版自动构建
 

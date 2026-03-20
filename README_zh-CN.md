@@ -9,11 +9,40 @@ Zelal Hossain](https://www.figma.com/community/file/995026220622307527)。
 ## 样式主题
 在 `/src/styles/globals.css` 可以修改样式颜色。
 
-## 一键部署
-[![Deploy with EdgeOne Pages](https://cdnstatic.tencentcs.com/edgeone/pages/deploy.svg)](https://console.cloud.tencent.com/edgeone/pages/new?template=app-landing-page&from=github)
-
 ## 服务器部署（Ubuntu + Docker）
 参考文档：`docs/deploy-ubuntu22-docker26-nginx.md`
+
+## 镜像构建与发布
+仓库已内置 GitHub Actions 工作流：`.github/workflows/build-web-image.yml`
+
+目标镜像仓库：
+
+- Registry：`crpi-had8j9la06ibxzbx.cn-shanghai.personal.cr.aliyuncs.com`
+- Repository：`three_engine/caselog-web`
+
+工作流规则：
+
+- 推送到 `main`：只做 Docker 构建校验，不推送镜像
+- 推送 `v1.0.0` 这类 Git Tag：构建并推送镜像
+
+GitHub 仓库需要提前配置以下 Repository secrets：
+
+- `REGISTRY_USERNAME`
+- `REGISTRY_PASSWORD`
+
+正式发布示例：
+
+```bash
+git tag v1.0.0
+git push origin v1.0.0
+```
+
+发布后会产出这些镜像标签：
+
+- `latest`
+- `sha-<commit>`
+- `1.0.0`
+- `1.0`
 
 ## 特性
 - 使用Next.js TypeScript 开发
