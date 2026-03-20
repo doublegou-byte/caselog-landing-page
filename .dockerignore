@@ -1,0 +1,9 @@
+.git
+.github
+.next
+docs
+node_modules
+npm-debug.log*
+out
+README.md
+README_zh-CN.md

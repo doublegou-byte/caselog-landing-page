@@ -60,7 +60,7 @@ const Hero = () => {
 
           <div className="relative mx-auto w-full max-w-md md:col-span-5 md:max-w-none">
             <Image
-              src="/images/1.gif"
+              src="/images/1.webp"
               alt="CaseLog app preview"
               width={320}
               height={600}

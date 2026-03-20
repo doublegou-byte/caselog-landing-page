@@ -42,7 +42,7 @@ const About: React.FC = () => {
               className="h-auto w-[168px] rounded-[1.4rem] border border-white/10 md:w-[184px]"
             />
             <Image
-              src="/images/3.gif"
+              src="/images/3.webp"
               alt="CaseLog 客户沟通移动端界面二"
               width={198}
               height={396}
