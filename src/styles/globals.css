@@ -1,66 +1,108 @@
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap");
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
-  --primary: #5956E9;
-  --secondary: #232233;
-  --text-muted: #6C6C72;
+  --background: #050506;
+  --foreground: #f5f5f7;
+  --primary: #ff9f0a;
+  --primary-soft: #ffbd59;
+  --secondary: #0b0d11;
+  --text-muted: #9aa2b1;
+  --panel-border: rgba(255, 255, 255, 0.1);
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: 'Josefin Sans', sans-serif;
+  --font-sans: "Manrope", sans-serif;
   --font-mono: var(--font-geist-mono);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-html{
+html {
   height: 100%;
 }
+
 body {
   height: 100%;
   background: var(--background);
   color: var(--foreground);
-  font-family: 'Josefin Sans', sans-serif;
-  > div#__next{
+  font-family: "Manrope", sans-serif;
+  letter-spacing: 0.01em;
+  -webkit-font-smoothing: antialiased;
+  > div#__next {
     height: 100%;
   }
 }
+
 .scroll-smooth {
   height: 100%;
-  overflow-y: scroll;
+  overflow-y: auto;
   scroll-behavior: smooth;
 }
+
 .uppercase {
   text-transform: uppercase;
+  letter-spacing: 0.06em;
 }
 
 .bg-primary {
   background-color: var(--primary);
 }
+
 .border-primary {
   border-color: var(--primary);
 }
+
 .text-primary {
   color: var(--primary);
 }
+
 .bg-secondary {
   background-color: var(--secondary);
 }
+
 .border-secondary {
   border-color: var(--secondary);
 }
+
 .text-secondary {
   color: var(--secondary);
 }
+
 .text-muted {
   color: var(--text-muted);
+}
+
+.font-display {
+  font-family: "Space Grotesk", "Manrope", sans-serif;
+}
+
+.section-shell {
+  border-radius: 2rem;
+  background: #0a0c10;
+  border: 1px solid var(--panel-border);
+  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.55);
+}
+
+.shell-wide {
+  width: calc(100vw - 9.2cm);
+  max-width: 1520px;
+  margin-inline: auto;
+}
+
+@media (max-width: 900px) {
+  .shell-wide {
+    width: calc(100vw - 1.6rem);
+  }
+}
+
+.accent-ring {
+  box-shadow:
+    0 0 0 1px rgba(255, 159, 10, 0.22),
+    0 0 28px rgba(255, 159, 10, 0.12);
+}
+
+::selection {
+  color: #111318;
+  background: var(--primary-soft);
 }

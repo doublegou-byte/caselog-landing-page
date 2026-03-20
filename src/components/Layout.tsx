@@ -1,6 +1,6 @@
-import React, { ReactNode } from 'react';
-import Head from 'next/head';
-import Footer from './Footer';
+import React, { ReactNode } from "react";
+import Head from "next/head";
+import Footer from "./Footer";
 
 interface LayoutProps {
   children: ReactNode;
@@ -8,10 +8,10 @@ interface LayoutProps {
   description?: string;
 }
 
-const Layout: React.FC<LayoutProps> = ({ 
-  children, 
-  title = 'App Landing Page',
-  description = 'A great app makes your life better - 优质应用让生活更美好'
+const Layout: React.FC<LayoutProps> = ({
+  children,
+  title = "CaseLog",
+  description = "让每一次客户沟通，沉淀为可复用的增长资产。",
 }) => {
   return (
     <>
@@ -21,16 +21,13 @@ const Layout: React.FC<LayoutProps> = ({
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      
-      <main className="scroll-smooth">
 
-        {/* <Header /> */}
+      <main className="scroll-smooth">
         {children}
         <Footer />
       </main>
-      
     </>
   );
 };
 
-export default Layout; 
+export default Layout;

@@ -4,158 +4,85 @@ import Link from "next/link";
 
 const Footer: React.FC = () => {
   return (
-    <footer className="bg-secondary text-white pt-30 pb-8 relative">
-      
-      <div className="container mx-auto px-4">
-        <div className="grid grid-cols-1 md:grid-cols-12 gap-8 mb-16">
-          {/* About Section */}
-          <div className="md:col-span-4">
-            <h2 className="text-3xl font-bold uppercase mb-4">Logo</h2>
-            <p className="mb-6 text-white/80">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra
-              nunc ante velit vitae. Est tellus vitae, nullam lobortis enim.
-            </p>
-            <div className="flex items-center space-x-4">
-              <a
-                href="https://facebook.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="Facebook"
-                className="text-white hover:text-primary transition-colors"
-              >
-                <Image
-                  src="/images/facebook-icon.svg"
-                  alt="Facebook"
-                  width={14}
-                  height={14}
-                />
-              </a>
-              <div className="h-4 border-l border-white/30"></div>
-              <a
-                href="https://instagram.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="Instagram"
-                className="text-white hover:text-primary transition-colors"
-              >
-                <Image
-                  src="/images/instagram-icon.svg"
-                  alt="Instagram"
-                  width={24}
-                  height={24}
-                />
-              </a>
-              <div className="h-4 border-l border-white/30"></div>
-              <a
-                href="https://twitter.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="Twitter"
-                className="text-white hover:text-primary transition-colors"
-              >
-                <Image
-                  src="/images/twitter-icon.svg"
-                  alt="Twitter"
-                  width={24}
-                  height={24}
-                />
-              </a>
-              <div className="h-4 border-l border-white/30"></div>
-              <a
-                href="https://youtube.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="YouTube"
-                className="text-white hover:text-primary transition-colors"
-              >
-                <Image
-                  src="/images/youtube-icon.svg"
-                  alt="YouTube"
-                  width={24}
-                  height={24}
-                />
-              </a>
+    <footer id="contact" className="py-2 md:py-3">
+      <div className="section-shell shell-wide px-4 py-4 md:px-5 md:py-5">
+        <div className="grid grid-cols-1 gap-4 md:grid-cols-12 md:items-start md:gap-x-6 md:gap-y-3">
+          <div className="md:col-span-5">
+            <p className="text-sm font-semibold text-white/92">联系我们</p>
+            <h3 className="font-display mt-2 text-[1.28rem] font-bold leading-tight text-white md:text-[1.44rem] lg:whitespace-nowrap">
+              准备好把客户沟通升级成增长资产了吗？
+            </h3>
+
+            <div className="mt-3 grid grid-cols-1 gap-2 sm:grid-cols-2 md:max-w-[460px]">
+              <div className="rounded-2xl border border-white/10 bg-black/35 px-3 py-2">
+                <p className="text-xs text-white/65">电话</p>
+                <div className="mt-1.5 space-y-0.5 text-sm font-semibold text-white">
+                  <p>17810648168</p>
+                  <p>13911788783</p>
+                </div>
+              </div>
+
+              <div className="rounded-2xl border border-white/10 bg-black/35 px-3 py-2">
+                <p className="text-xs text-white/65">邮箱</p>
+                <div className="mt-1.5 space-y-0.5 text-sm font-semibold">
+                  <a href="mailto:doublegou@gmail.com" className="block text-white transition-colors hover:text-primary">
+                    doublegou@gmail.com
+                  </a>
+                  <a href="mailto:newbee1984@gmail.com" className="block text-white transition-colors hover:text-primary">
+                    newbee1984@gmail.com
+                  </a>
+                </div>
+              </div>
             </div>
           </div>
 
-          {/* Quick Links */}
-          <div className="md:col-span-3 md:ml-8">
-            <h3 className="text-2xl font-semibold uppercase mb-4">
-              Quick Links
-            </h3>
-            <ul className="space-y-3">
+          <div className="md:col-span-3">
+            <p className="text-sm font-semibold text-white/92">扫码添加</p>
+            <div className="mt-[14px] grid max-w-[240px] grid-cols-2 gap-2">
+              <div className="rounded-xl border border-white/10 bg-black/35 p-1.5">
+                <Image src="/images/qr-code-1.jpg" alt="微信二维码一" width={120} height={120} className="h-auto w-full rounded-lg" />
+              </div>
+              <div className="rounded-xl border border-white/10 bg-black/35 p-1.5">
+                <Image src="/images/qr-code-2.jpg" alt="微信二维码二" width={120} height={120} className="h-auto w-full rounded-lg" />
+              </div>
+            </div>
+          </div>
+
+          <div className="md:col-span-2">
+            <p className="text-sm font-semibold text-white/92">快速入口</p>
+            <ul className="mt-3 space-y-1.5 text-sm">
               <li>
-                <Link
-                  href="#features"
-                  className="text-white/80 hover:text-primary transition-colors"
-                >
-                  Features
+                <Link href="#home" className="text-white/70 transition-colors hover:text-primary">
+                  首页
                 </Link>
               </li>
               <li>
-                <Link
-                  href="#about"
-                  className="text-white/80 hover:text-primary transition-colors"
-                >
-                  About
+                <Link href="#about" className="text-white/70 transition-colors hover:text-primary">
+                  关于
                 </Link>
               </li>
               <li>
-                <Link
-                  href="#screenshot"
-                  className="text-white/80 hover:text-primary transition-colors"
-                >
-                  Screenshots
+                <Link href="#features" className="text-white/70 transition-colors hover:text-primary">
+                  功能
                 </Link>
               </li>
             </ul>
           </div>
 
-          {/* Newsletter */}
-          <div className="md:col-span-5">
-            <h3 className="text-2xl font-semibold uppercase mb-4">
-              Newsletter
-            </h3>
-            <p className="mb-6 text-white/80">
-              Subscribe to our newsletter for latest updates and news
-            </p>
-
-            <div className="relative">
-              <input
-                type="email"
-                placeholder="Your email address"
-                className="w-full bg-transparent border border-white rounded py-3 px-4 text-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-primary"
-              />
-              <button
-                className="absolute right-0 top-0 bottom-0 bg-primary text-white px-4 rounded-r flex items-center justify-center hover:bg-primary/90 transition-colors"
-                aria-label="Send"
-              >
-                <Image
-                  src="/images/send-icon.svg"
-                  alt="Send"
-                  width={24}
-                  height={24}
-                  className="text-white"
-                />
-              </button>
+          <div className="md:col-span-2">
+            <p className="text-sm font-semibold text-white/92">公司信息</p>
+            <div className="mt-3 text-xs leading-5 text-white/52">
+              <p>北京三擎科技有限公司</p>
+              <p className="mt-1">北京市昌平区东小口镇天通中苑二区21号楼1层103-1799</p>
             </div>
           </div>
         </div>
 
-        <div className="border-t border-white/20 pt-6 mt-10">
-          <div className="flex items-center justify-center">
-            <div className="flex items-center">
-              <Image
-                src="/images/copyright-icon.svg"
-                alt="Copyright"
-                width={18}
-                height={18}
-                className="mr-2 opacity-80"
-              />
-              <p className="text-white/80">
-                Copyright 2025. All Right Reserved.
-              </p>
-            </div>
+        <div className="mt-3 border-t border-white/12 pt-2">
+          <div className="flex items-center justify-center gap-3 text-[11px] leading-tight text-white/56">
+            <p>Trigine</p>
+            <span className="text-white/35">|</span>
+            <p>京ICP备2026012266号-1</p>
           </div>
         </div>
       </div>

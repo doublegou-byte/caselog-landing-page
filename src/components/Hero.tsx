@@ -1,81 +1,70 @@
-import React from 'react';
-import Image from 'next/image';
-import Header from './Header';
+import React from "react";
+import Image from "next/image";
 
 const Hero = () => {
   return (
-    <section id="home" className="relative min-h-screen flex items-center">
-      {/* Background Image */}
-      <div className="absolute inset-0 z-0">
-        <Image 
-          src="/images/hero-background.png"
-          alt="Background"
-          fill
-          priority
-          style={{ objectFit: 'cover' }}
-        />
-      </div>
-      <Header/>
-      
-      <div className="container mx-auto px-4 z-10 pt-80 md:pt-32 lg:pt-10">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-          <div className="relative w-full md:w-160 h-auto md:h-120">
-            <div className="hidden md:block absolute top-0 left-20 w-160 h-100 border-[#7572FF] border-[18px]"></div>
-            <div className="bg-white p-6 md:p-8 pb-8 md:pb-12 mb-6 md:ml-8 md:mt-8 z-10 md:absolute md:top-10 rounded-lg md:rounded-none shadow-lg md:shadow-none">
-              <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-primary uppercase leading-tight text-[#5956E9]">
-                A Great App Makes<br className="hidden sm:block" />Your Life Better
-              </h1>
-              <p className="text-gray-800 my-4 md:mb-8 max-w-xl">
-                Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. 
-                Velit officia consequat duis enim velit mollit. Exercitation veniam consequat 
-                sunt nostrud amet.
-              </p>
-              <div>
-                <h3 className="text-xl md:text-2xl font-semibold text-secondary uppercase mb-4">
-                  Download App Now
-                </h3>
-                <div className="flex flex-row flex-wrap gap-4">
-                  <a href="#" className="block w-60">
-                    <Image 
-                      src="/images/download-apple.png"
-                      alt="Download on Apple Store"
-                      width={120}
-                      height={56}
-                      className="w-full sm:w-auto h-auto"
-                    />
-                  </a>
-                  <a href="#" className="block w-60">
-                    <Image 
-                      src="/images/download-google.png"
-                      alt="Get it on Google Play"
-                      width={120}
-                      height={56}
-                      className="w-full sm:w-auto h-auto"
-                    />
-                  </a>
-                </div>
-              </div>
+    <section id="home" className="relative overflow-hidden pb-12 pt-3 md:pb-20 md:pt-4">
+      <div className="section-shell shell-wide relative overflow-hidden rounded-[2.2rem]">
+        <div className="relative px-5 pt-3 md:px-10 md:pt-4">
+          <div className="flex items-center justify-between">
+            <a href="#home" className="relative block h-8 w-28 md:h-9 md:w-32">
+              <Image src="/images/logo (3).png" alt="CaseLog" fill className="object-contain" />
+            </a>
+
+            <div className="flex items-center gap-4 md:gap-8">
+              <a href="#about" className="hidden text-sm font-medium text-white/82 transition-colors hover:text-white md:block">
+                关于
+              </a>
+              <a href="#features" className="hidden text-sm font-medium text-white/82 transition-colors hover:text-white md:block">
+                功能
+              </a>
+              <a
+                href="#contact"
+                className="rounded-full bg-primary px-5 py-2 text-sm font-semibold text-black transition-colors hover:bg-[#ffb340]"
+              >
+                立即体验
+              </a>
             </div>
           </div>
-          
-          <div className="relative hidden md:block absolute top-0 -right-60">
-            <Image 
-              src="/images/mobile-mockup.png"
-              alt="Mobile App Mockup"
-              width={500}
-              height={600}
-              className="mx-auto"
-            />
+        </div>
+
+        <div className="grid min-h-[66vh] grid-cols-1 items-center gap-8 px-6 pb-10 pt-4 md:grid-cols-12 md:px-10 md:pb-14 md:pt-6">
+          <div className="md:col-span-7">
+            <p className="mb-4 inline-flex items-center rounded-full border border-white/20 bg-white/8 px-3 py-1 text-xs font-semibold text-white/88">
+              CaseLog CRM Intelligence
+            </p>
+            <h1 className="font-display text-3xl font-bold leading-[1.06] tracking-tight text-white md:text-[3.25rem] lg:text-[3.75rem]">
+              每次沟通都沉淀价值
+              <br />
+              每位客户都可持续跟进
+            </h1>
+            <p className="mt-5 max-w-xl text-base text-white/72 md:text-lg">
+              从录音、转写到待办与客户档案，自动串起完整闭环。你的每一次销售动作，都能被留存、复用、增长。
+            </p>
+
+            <div className="mt-8 flex flex-wrap items-center gap-3">
+              <a
+                href="#contact"
+                className="rounded-full bg-primary px-6 py-3 text-sm font-bold text-black transition-transform hover:scale-[1.03] hover:bg-[#ffb340]"
+              >
+                申请内测名额
+              </a>
+              <a
+                href="#features"
+                className="rounded-full border border-white/20 bg-white/5 px-6 py-3 text-sm font-semibold text-white transition-colors hover:bg-white/12"
+              >
+                查看核心功能
+              </a>
+            </div>
           </div>
-          
-          {/* Mobile phone mockup - only visible on mobile */}
-          <div className="relative flex justify-center md:hidden mb-8">
-            <Image 
-              src="/images/mobile-mockup.png"
-              alt="Mobile App Mockup"
-              width={300}
-              height={400}
-              className="mx-auto"
+
+          <div className="relative mx-auto w-full max-w-md md:col-span-5 md:max-w-none">
+            <Image
+              src="/images/1.gif"
+              alt="CaseLog app preview"
+              width={320}
+              height={600}
+              className="relative mx-auto rounded-[2rem] border border-white/10 shadow-[0_35px_90px_rgba(0,0,0,0.58)]"
             />
           </div>
         </div>
@@ -84,4 +73,4 @@ const Hero = () => {
   );
 };
 
-export default Hero; 
+export default Hero;
