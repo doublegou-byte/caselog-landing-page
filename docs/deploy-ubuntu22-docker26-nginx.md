@@ -129,8 +129,10 @@ server {
     index index.html;
 
     location / {
-        try_files $uri $uri.html $uri/ /index.html;
+        try_files $uri $uri.html $uri/ =404;
     }
+
+    error_page 404 /404.html;
 
     location /_next/static/ {
         expires 30d;
@@ -141,6 +143,8 @@ server {
 ```
 
 这样前端镜像就是完整可运行单元，不依赖宿主机目录挂载。
+
+这里特意不把未知路径回退到 `/index.html`，因为当前站点是单页官网而不是前端路由应用。这样可以避免诸如 `/wp-admin/...` 这类扫描请求错误地返回 `200`。
 
 ## 7. 外层网关 Nginx 怎么做
 
