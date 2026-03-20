@@ -8,6 +8,18 @@ Local development: `npm run dev`
 ## Style Theme
 You can modify the color theme in `/src/styles/globals.css`.
 
+## Deployment Docs
+
+- General Ubuntu + Docker deployment: `docs/总体设计.md`
+- First Tencent Cloud gateway setup: `docs/第一次部署流程.md`
+- Release and rollback workflow: `docs/更新流程.md`
+
+Current production recommendation:
+
+- Use Docker for `gateway + web + api`
+- Use `acme.sh + DNSPod API` for TLS issuance and automatic renewal
+- Let `acme.sh` install certs into the gateway cert directory and reload Nginx automatically
+
 ## Image Build And Release
 This repository includes a GitHub Actions workflow for container image build and release:
 
@@ -18,7 +30,7 @@ This repository includes a GitHub Actions workflow for container image build and
 Behavior:
 
 - Push to `main`: build validation only, no image push
-- Push tag like `v1.0.0`: build and push image
+- Push tag like `v1.0.1`: build and push image
 
 Required GitHub Actions secrets:
 
@@ -28,15 +40,15 @@ Required GitHub Actions secrets:
 Release example:
 
 ```bash
-git tag v1.0.0
-git push origin v1.0.0
+git tag v1.0.1
+git push origin v1.0.1
 ```
 
 This will publish image tags such as:
 
 - `latest`
 - `sha-<commit>`
-- `1.0.0`
+- `1.0.1`
 - `1.0`
 
 ## Features
